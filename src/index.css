@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Roboto+Slab:wght@700&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --primary-color: #f87070;
+  --secondary-color: #70f3f8;
+  --third-color: #d881f8;
+  --fourth-color: #d7e0ff;
+  --fifth-color: #1e213f;
+  --sixth-color: #eff1fa;
+  --seventh-color: #161932;
+  --white-color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+*,
+*:before,
+s *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  /* font-family: "Roboto Slab", serif; */
+  /* font-family: "Space Mono", monospace; */
+  font-size: 1.6rem;
+}
+/* Globals */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
 }
