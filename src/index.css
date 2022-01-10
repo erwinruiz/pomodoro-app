@@ -26,6 +26,7 @@ body {
   /* font-family: "Roboto Slab", serif; */
   /* font-family: "Space Mono", monospace; */
   font-size: 1.6rem;
+  background-color: var(--fifth-color);
 }
 /* Globals */
 h1,

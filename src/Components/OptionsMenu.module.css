@@ -1,0 +1,35 @@
+.container {
+  background-color: var(--seventh-color);
+  border-radius: 3.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0.6rem;
+  z-index: 5;
+}
+.option {
+  width: 10.6rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.65rem;
+}
+.option p {
+  font-size: 1.2rem;
+  line-height: 1.488rem;
+  font-weight: 700;
+  color: var(--fourth-color);
+  opacity: 0.4;
+}
+.option p:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.option-active {
+  background-color: var(--primary-color);
+}
+.option-active p {
+  color: var(--fifth-color);
+  opacity: 1;
+}
