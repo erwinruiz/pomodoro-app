@@ -1,12 +1,10 @@
 import classes from "./ModalSettings.module.css";
 import ReactDOM from "react-dom";
+import { useContext } from "react";
+import { Context } from "../store/context";
 
-type ModalSettingProsp = {
-  onCloseModal: () => void;
-};
-
-function ModalSettings(props: ModalSettingProsp) {
-  const { onCloseModal } = props;
+function ModalSettings() {
+  const { modalHandler } = useContext(Context);
 
   const content = (
     <div className={classes.container}>
@@ -15,7 +13,7 @@ function ModalSettings(props: ModalSettingProsp) {
         <img
           src="./assets/icon-close.svg"
           alt="close icon"
-          onClick={onCloseModal}
+          onClick={modalHandler}
         />
       </div>
       <div className={classes["second-section"]}>

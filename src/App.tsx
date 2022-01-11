@@ -1,16 +1,13 @@
-import { Fragment, useState } from "react";
+import { Fragment, useContext } from "react";
 import classes from "./App.module.css";
 import ModalSettings from "./Components/ModalSettings";
 import OptionsMenu from "./Components/OptionsMenu";
 import Timer from "./Components/Timer";
 import Backdrop from "./Components/UI/Backdrop";
+import { Context } from "./store/context";
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const settingsHandler = () => {
-    setIsModalOpen((state) => !state);
-  };
+  const { modalHandler, isModalOpen } = useContext(Context);
 
   return (
     <Fragment>
@@ -25,11 +22,11 @@ function App() {
         <img
           src="./assets/icon-settings.svg"
           alt="setting icon"
-          onClick={settingsHandler}
+          onClick={modalHandler}
         />
       </footer>
-      {isModalOpen && <Backdrop onCloseModal={settingsHandler} />}
-      {isModalOpen && <ModalSettings onCloseModal={settingsHandler} />}
+      {isModalOpen && <Backdrop />}
+      {isModalOpen && <ModalSettings />}
     </Fragment>
   );
 }
