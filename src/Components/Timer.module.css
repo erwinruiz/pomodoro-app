@@ -26,6 +26,8 @@
 .text {
   color: var(--fourth-color);
   font-weight: 700;
+  z-index: 5;
+  user-select: none;
 }
 .timer {
   font-size: 8rem;
@@ -34,6 +36,12 @@
 .text {
   font-size: 1.4rem;
   line-height: 1.313rem;
+  letter-spacing: 1.313rem;
+  margin-right: -1.313rem;
+}
+.text:hover {
+  color: var(--primary-color);
+  cursor: pointer;
 }
 svg {
   position: absolute;
