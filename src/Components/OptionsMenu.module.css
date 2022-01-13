@@ -27,9 +27,12 @@
   opacity: 1;
 }
 .option-active {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 .option-active p {
   color: var(--fifth-color);
   opacity: 1;
+}
+.option-active p:hover {
+  cursor: default;
 }

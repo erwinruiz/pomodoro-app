@@ -1,6 +1,10 @@
 import classes from "./Timer.module.css";
+import { useContext } from "react";
+import { Context } from "../store/context";
 
 function Timer() {
+  const { color } = useContext(Context);
+
   return (
     <div className={classes.container}>
       <div className={classes["inside-container"]}>
@@ -11,7 +15,12 @@ function Timer() {
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="60" cy="60" r="50" />
+          <circle
+            cx="60"
+            cy="60"
+            r="50"
+            style={{ stroke: `var(--${color}-color)` }}
+          />
         </svg>
       </div>
     </div>

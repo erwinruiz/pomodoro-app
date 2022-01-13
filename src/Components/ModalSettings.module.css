@@ -82,7 +82,7 @@
   font-size: 1.4rem;
   line-height: 1.736rem;
   font-weight: 700;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-family);
   color: var(--fifth-color);
 }
 /* Remove Arrows/Spinners */
@@ -132,6 +132,18 @@ input[type="number"] {
   color: var(--fifth-color);
   opacity: 72.97%;
 }
+.font-active:hover,
+.color-active:hover {
+  border: none;
+  cursor: default;
+}
+.font-active div {
+  background-color: var(--seventh-color);
+}
+.font-active div p {
+  color: var(--white-color);
+  opacity: 1;
+}
 .fonts-container .outer-border:nth-child(2) p {
   font-family: "Roboto Slab", serif;
 }
@@ -163,9 +175,6 @@ input[type="number"] {
   width: 4rem;
   border-radius: 50%;
 }
-.colors-container .color:hover {
-  cursor: pointer;
-}
 .colors-container .first-color {
   background-color: var(--primary-color);
 }
@@ -186,7 +195,7 @@ input[type="number"] {
   border: none;
   background-color: var(--primary-color);
   color: var(--white-color);
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.984rem;

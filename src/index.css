@@ -9,6 +9,7 @@
   --sixth-color: #eff1fa;
   --seventh-color: #161932;
   --white-color: #ffffff;
+  --font-family: "Kumbh Sans", sans-serif;
 }
 
 html {
@@ -22,7 +23,7 @@ s *:after {
 }
 body {
   margin: 0;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-family);
   /* font-family: "Roboto Slab", serif; */
   /* font-family: "Space Mono", monospace; */
   font-size: 1.6rem;

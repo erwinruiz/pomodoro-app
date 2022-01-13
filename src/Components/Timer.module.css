@@ -49,7 +49,7 @@ svg {
 }
 circle {
   fill: none;
-  stroke: var(--primary-color);
+  /* stroke: var(--primary-color); */
   stroke-linecap: round;
   stroke-width: 0.3rem;
   stroke-dasharray: 440;
