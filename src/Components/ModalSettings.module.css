@@ -48,42 +48,58 @@
 .second-section .time-option:not(:last-child) {
   margin-bottom: 0.8rem;
 }
-.second-section .time-option p {
+.second-section .time-option .time-option-title {
   color: var(--fifth-color);
   opacity: 0.4;
   font-size: 1.2rem;
   line-height: 1.488rem;
 }
-.second-section .input-container {
+.second-section .selected-time-container {
   background-color: var(--sixth-color);
   border-radius: 1rem;
-  padding: 1.5rem 1.6rem 1.1rem;
+  /* padding: 1.5rem 1 .6rem 1.1rem; */
+  padding: 0 0.6rem 0 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 14rem;
 }
-.second-section .arrows-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.9rem;
-}
-.second-section .arrows-container img {
-  opacity: 0.25;
-}
-.second-section .arrows-container img:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.second-section .time-option input {
-  background-color: var(--sixth-color);
-  width: 11.2rem;
-  border: none;
-  outline: none;
+.selected-time-container .selected-time {
   font-size: 1.4rem;
   line-height: 1.736rem;
   font-weight: 700;
   font-family: var(--font-family);
   color: var(--fifth-color);
+  user-select: none;
+}
+.second-section .arrows-container {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* row-gap: 0.9rem; */
+}
+.second-section .arrows-container img {
+  opacity: 0.25;
+  user-select: none;
+}
+.second-section .arrow-container:hover img {
+  opacity: 1;
+}
+.second-section .arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.arrow-container:first-of-type {
+  padding: 0.85rem 0.5rem 0.45rem;
+}
+.arrow-container:last-of-type {
+  padding: 0.45rem 0.5rem 0.85rem;
 }
 /* Remove Arrows/Spinners */
 /* Chrome, Safari, Edge, Opera */
