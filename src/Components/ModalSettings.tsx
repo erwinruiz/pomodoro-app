@@ -176,7 +176,11 @@ function ModalSettings() {
             }`}
             onClick={() => setColor("primary")}
           >
-            <div className={`${classes.color} ${classes["first-color"]}`}></div>
+            <div className={`${classes.color} ${classes["first-color"]}`}>
+              {color === "primary" && (
+                <img src="./assets/checkmark-icon.png" alt="checkmark icon" />
+              )}
+            </div>
           </div>
           <div
             className={`${classes["outer-border"]} ${
@@ -184,9 +188,11 @@ function ModalSettings() {
             }`}
             onClick={() => setColor("secondary")}
           >
-            <div
-              className={`${classes.color} ${classes["second-color"]}`}
-            ></div>
+            <div className={`${classes.color} ${classes["second-color"]}`}>
+              {color === "secondary" && (
+                <img src="./assets/checkmark-icon.png" alt="checkmark icon" />
+              )}
+            </div>
           </div>
           <div
             className={`${classes["outer-border"]} ${
@@ -194,7 +200,11 @@ function ModalSettings() {
             }`}
             onClick={() => setColor("third")}
           >
-            <div className={`${classes.color} ${classes["third-color"]}`}></div>
+            <div className={`${classes.color} ${classes["third-color"]}`}>
+              {color === "third" && (
+                <img src="./assets/checkmark-icon.png" alt="checkmark icon" />
+              )}
+            </div>
           </div>
         </div>
       </div>
