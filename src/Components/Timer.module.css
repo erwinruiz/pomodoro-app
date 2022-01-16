@@ -57,3 +57,25 @@ circle {
   transform: rotate(-90deg);
   transform-origin: center center;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    height: 41rem;
+    width: 41rem;
+    padding: 2.2rem;
+  }
+  svg {
+    width: 39rem;
+  }
+  .timer {
+    font-size: 10rem;
+    line-height: 12.402rem;
+  }
+  .text {
+    font-size: 1.6rem;
+    line-height: 1.984rem;
+    letter-spacing: 1.5rem;
+    margin-right: -1.5rem;
+  }
+}

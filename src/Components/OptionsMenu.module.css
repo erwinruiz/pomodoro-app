@@ -36,3 +36,11 @@
 .option-active p:hover {
   cursor: default;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .option p {
+    font-size: 1.4rem;
+    line-height: 1.736rem;
+  }
+}
