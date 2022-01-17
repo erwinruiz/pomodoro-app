@@ -71,62 +71,64 @@ function ModalSettings() {
       </div>
       <div className={classes["second-section"]}>
         <h3>TIME (MINUTES)</h3>
-        <div className={classes["time-option"]}>
-          <p className={classes["time-option-title"]}>pomodoro</p>
-          <div className={classes["selected-time-container"]}>
-            <p className={classes["selected-time"]}>{pomodoro}</p>
-            <div className={classes["arrows-container"]}>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => increment("pomodoro")}
-              >
-                <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
-              </div>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => decrement("pomodoro")}
-              >
-                <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={classes["time-option"]}>
-          <p className={classes["time-option-title"]}>short break</p>
-          <div className={classes["selected-time-container"]}>
-            <p className={classes["selected-time"]}>{shortBreak}</p>
-            <div className={classes["arrows-container"]}>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => increment("short-break")}
-              >
-                <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
-              </div>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => decrement("short-break")}
-              >
-                <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
+        <div className={classes["time-options-container"]}>
+          <div className={classes["time-option"]}>
+            <p className={classes["time-option-title"]}>pomodoro</p>
+            <div className={classes["selected-time-container"]}>
+              <p className={classes["selected-time"]}>{pomodoro}</p>
+              <div className={classes["arrows-container"]}>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => increment("pomodoro")}
+                >
+                  <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
+                </div>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => decrement("pomodoro")}
+                >
+                  <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className={classes["time-option"]}>
-          <p className={classes["time-option-title"]}>long break</p>
-          <div className={classes["selected-time-container"]}>
-            <p className={classes["selected-time"]}>{longBreak}</p>
-            <div className={classes["arrows-container"]}>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => increment("long-break")}
-              >
-                <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
+          <div className={classes["time-option"]}>
+            <p className={classes["time-option-title"]}>short break</p>
+            <div className={classes["selected-time-container"]}>
+              <p className={classes["selected-time"]}>{shortBreak}</p>
+              <div className={classes["arrows-container"]}>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => increment("short-break")}
+                >
+                  <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
+                </div>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => decrement("short-break")}
+                >
+                  <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
+                </div>
               </div>
-              <div
-                className={classes["arrow-container"]}
-                onClick={() => decrement("long-break")}
-              >
-                <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
+            </div>
+          </div>
+          <div className={classes["time-option"]}>
+            <p className={classes["time-option-title"]}>long break</p>
+            <div className={classes["selected-time-container"]}>
+              <p className={classes["selected-time"]}>{longBreak}</p>
+              <div className={classes["arrows-container"]}>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => increment("long-break")}
+                >
+                  <img src="./assets/icon-arrow-up.svg" alt="arrow up" />
+                </div>
+                <div
+                  className={classes["arrow-container"]}
+                  onClick={() => decrement("long-break")}
+                >
+                  <img src="./assets/icon-arrow-down.svg" alt="arrow down" />
+                </div>
               </div>
             </div>
           </div>

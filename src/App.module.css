@@ -1,5 +1,6 @@
 .header {
-  margin: 3.2rem 0 3.9rem;
+  padding-top: 3.2rem;
+  margin-bottom: 3.9rem;
 }
 .header img {
   display: block;
@@ -31,7 +32,8 @@
 /* Tablet */
 @media (min-width: 768px) {
   .header {
-    margin: 8rem 0 4.7rem;
+    padding-top: 8rem;
+    margin-bottom: 4.7rem;
   }
   .header img {
     height: 4rem;
