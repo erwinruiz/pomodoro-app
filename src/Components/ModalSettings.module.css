@@ -301,3 +301,10 @@ input[type="number"] {
     margin-bottom: 0;
   }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    margin: 15.5rem calc(50% - 27rem) 0;
+  }
+}
